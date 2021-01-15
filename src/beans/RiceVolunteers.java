@@ -4,6 +4,11 @@ package beans;
  * author JD
  * created 1/14/21 9:45 AM
  */
+
+/*
+* To support multiple attribute we have created the class and its field
+*
+* */
 public class RiceVolunteers {
 
     private Integer bagsStillNeeded;
@@ -14,6 +19,7 @@ public class RiceVolunteers {
     private Integer actualBags;
     private String day;
 
+    // To support file with Days
     public RiceVolunteers(Integer volunteers, Integer goalBags, Integer actualBags, String day) {
         this.volunteers = volunteers;
         this.goalBags = goalBags;
@@ -21,6 +27,7 @@ public class RiceVolunteers {
         this.day = day;
     }
 
+    // To support file without Days
     public RiceVolunteers(Integer volunteers, Integer goalBags, Integer actualBags) {
         this.volunteers = volunteers;
         this.goalBags = goalBags;
@@ -95,6 +102,8 @@ public class RiceVolunteers {
                 ", day='" + day + '\'' +
                 '}';
     }
+
+    //Calculation of other three attribute
 
     public void calculateBagsStillNeeded() {
         this.bagsStillNeeded = this.goalBags - this.actualBags;

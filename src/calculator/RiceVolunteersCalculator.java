@@ -14,6 +14,10 @@ import java.util.List;
  * author JD
  * created 1/14/21 10:05 AM
  */
+
+/*
+* Act as middleware between Data and Caller, calls all the business operation.
+* */
 public class RiceVolunteersCalculator {
 
     private List<RiceVolunteers> list = new ArrayList<>();
