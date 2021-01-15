@@ -27,6 +27,11 @@ Which helps to achieve modularization.
 
 #How to run the program
 
+Software:
+Java13
+Junit5
+Intellij
+
 Clone this code from my git repo.(https://github.com/jayD9/GranicusTakeHomeassessment.git)
 Open the project in Intellij.
 Click on edit configuration top right side near to run button. Set parameter argument as --> src/resources/food_shelf_north.txt (this will take the input text file)
